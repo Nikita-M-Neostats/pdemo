@@ -30,7 +30,7 @@ speech_config.speech_synthesis_voice_name = "en-US-AvaNeural"
 speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config)
 
 # Use default microphone
-audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
+audio_config = speechsdk.audio.AudioConfig(use_default_microphone=False)
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
 
 # Adjust the timeout properties
